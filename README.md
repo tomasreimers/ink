@@ -15,6 +15,7 @@ Ink exposes one function, fill_pdf, which:
 Modifies the PDF of the input stream by inserting the strings in modifications,
 and then writes the new PDF out to the output stream
 
+```
 input_stream - a stream of the file to modify (i.e. open('./example.pdf', 'r'))
 output_stream - a stream to write the file out to (i.e. open('./example_output.pdf', 'w'))
 modifications - an array of modifications to make, a modification is a dictionary
@@ -27,6 +28,7 @@ modifications - an array of modifications to make, a modification is a dictionar
                     [font_size, default: 20] - which font_size to use
                     [align, default: ALIGN.LEFT] - one of ALIGN.LEFT, .RIGHT, .CENTER, for how to align text
 @return - void
+```
 
 For an example, see `example.py`.
 
